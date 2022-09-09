@@ -1,0 +1,5 @@
+Dados necessários para gerar o relatório de produtos para a contabilidade ajustar os dados fiscais
+
+relatório 24
+
+Código do produto - Nome do produto - Tributo - Imposto - CFOP_Venda - Cod_NCM - Cod_CEST

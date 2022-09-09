@@ -1,0 +1,10 @@
+Comando para não gerar mais o arquivo de LOG:
+(inserir na INI logo abaixo de [Segurança])
+
+[Lab]
+EnableFoodServiceLog=0
+
+Caminho do arquivo:
+Ms/Misterchefnet ->
+Pastas: PDV, Uteis, Retaguarda ou Fechamentos
+Filtrar pelo maior arquivo

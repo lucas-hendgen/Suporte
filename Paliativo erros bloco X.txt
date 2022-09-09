@@ -1,0 +1,10 @@
+Excluir bloco X com erro:
+delete from ControleEnvioArquivosPafEcf where status != 5
+
+
+
+Verificar onde esta logado transmissor de arquivos PafEcf:
+select * from ControleEnvioArquivosPafEcfMaquinaLogada
+
+
+update ControleEnvioArquivosPafEcf set NomeArquivo= '\MICROVENDA\Ms\Misterchefnet\PDV\ReducaoZ\BE112010101110048287\314\Enviado\Redução Z 01102021.XML'

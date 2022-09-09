@@ -1,0 +1,11 @@
+excluir banco;
+excluir banco sync;
+
+Anexar banco que vai subir;
+
+passar o BD;
+
+deletar : 
+	funcionarios
+	funcionarios acesso
+	loja usuario

@@ -1,0 +1,18 @@
+erro gerar sintegra
+
+Declare @nserieecf VarChar (20),@dataini DateTime ,@datafim DateTime ,@crzini Int ,@crzfim Int
+SET @nserieecf='BE111610101110014139' -- <-numero da serie do ecf
+SET @dataini='20210207' -- <- primeiro dia do mês que você quer gerar o sintegra
+SET @datafim='20210311' -- <- ultimo dia do mês que você quer gerar o sintegra
+--- não mexer daqui para baixo ---
+SET @crzini=(SELECT Min ([contador z final]) FROM [livros fiscais] WHERE [nº serie ECF]=@nserieecf And [data movimento] between @dataini And @datafim)
+SET @crzfim=(SELECT Max ([contador z final])+1 FROM [livros fiscais] WHERE [nº serie ECF]=@nserieecf And [data movimento] between @dataini And @datafim )
+While (@crzini)<@crzfim
+Begin
+UPDATE [livros fiscais] SET [coo final]=(SELECT [coo anterior]-1 FROM [livros fiscais] WHERE [contador z final]=@crzini+1 And [nº serie ECF]=@nserieecf) WHERE [contador z final]=@crzini And [nº serie ECF]=@nserieecf
+SET @crzini=@crzini+1
+If (@crzini)=@crzfim
+break
+Else
+continue
+End

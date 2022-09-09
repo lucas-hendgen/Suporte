@@ -1,0 +1,3 @@
+UPDATE ESTOQUE SET [TEXTO FISCAL] = [NOME PRODUTO]
+
+comando pra erro na descrição do ECF 

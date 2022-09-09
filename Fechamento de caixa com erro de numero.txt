@@ -1,0 +1,5 @@
+Probelma no fechamento de caixa (N° de abertura diferente do numero da máquina na licença)
+
+SELECT * FROM [Abertura Caixa]
+
+UPDATE [Abertura Caixa] SET [Nº Caixa] = 4

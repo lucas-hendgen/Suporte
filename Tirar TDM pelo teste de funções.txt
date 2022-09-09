@@ -1,0 +1,14 @@
+Ajusta a BemaFI32 do teste de funções:
+Porta=USB
+ProtocoloUnico=1
+
+Funções de Relatórios Fiscais
+	Bematech_FI_LeituraX(-)
+
+Funções PAF-ECF
+	Bematech_FI_EspelhoMFD(+)
+	Bematech_FI_ArquivoMFD(+)
+
+
+tirar uma do mes atual mes atual;
+e outra do dia 01/03/2020 até a data atual

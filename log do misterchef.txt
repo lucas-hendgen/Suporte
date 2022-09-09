@@ -1,0 +1,17 @@
+quando for instação nova conferir log do misterchef
+[Gerenciador Impressao]
+ImprimirTextoCompleto=1
+Espera Impressao=0
+
+
+UsarDLL=1
+
+[Seguranca]
+Chave1=1
+
+[Webservice]
+URL=http://localhost/WSMisterchefnet/Servico2.asmx
+
+
+[LAB]
+EnablefoodServiceLog=0
